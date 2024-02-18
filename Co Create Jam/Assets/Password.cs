@@ -17,6 +17,15 @@ public class Password : MonoBehaviour
         {
             Debug.Log("Congrats");
         }
+    }
 
+    public void CheckCost()
+    {
+        string _givenPassword = GetComponent<TMP_InputField>().text;
+
+        if (_givenPassword.ToUpper() == correctPassword.ToUpper())
+        {
+            GetComponent<PopUpOnClick>().OpenPoPup();
+        }
     }
 }
