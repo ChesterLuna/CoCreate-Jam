@@ -3,16 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainWebPage : MonoBehaviour
 {
-    [SerializeField] public String[] TabsScenesNames;
+    LevelManager _levelManager;
     // Start is called before the first frame update
     void Awake()
     {
-        Debug.Assert(TabsScenesNames!= null, "No added Scenes");
-        
+        _levelManager = GameObject.FindWithTag("GameController").GetComponent<LevelManager>();
     }
 
     // Update is called once per frame
@@ -23,6 +21,6 @@ public class MainWebPage : MonoBehaviour
 
     public void ChangeTab(string _tab)
     {
-        SceneManager.LoadScene(_tab);
+        _levelManager.ChangeCanvas(_tab);
     }
 }

@@ -13,8 +13,9 @@ public class PopUpOnClick : MonoBehaviour
 
     void Awake()
     {
+        
         _mainCamera = Camera.main;
-        _mainCanvas = GameObject.Find("Main Canvas");
+        _mainCanvas = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().GetActiveCanvas();
         // if(popUp == null)
         Debug.Assert(_popUp != null, "There is no popup added to this button");
 
