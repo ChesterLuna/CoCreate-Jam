@@ -84,5 +84,10 @@ public class LevelManager : MonoBehaviour
         return _activeCanvas;
     }
 
+    public void AddTimer(float seconds)
+    {
+        _timeLeft += seconds;
+    }
+
 
 }

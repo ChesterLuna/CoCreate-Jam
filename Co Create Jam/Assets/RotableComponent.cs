@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotableComponent : MonoBehaviour
 {
-    float _startAngle=0f;
+    float _startAngle=90f;
     [SerializeField] bool _hourHand = false;
     [SerializeField] bool _minuteHand = false;
     string _time;
@@ -16,11 +16,6 @@ public class RotableComponent : MonoBehaviour
         rt = GetComponent<RectTransform>();
         _startAngle = rt.eulerAngles.z;
         //_time = angleToTime(transform.rotation.z);
-    }
-
-    private void Update()
-    {
-        Debug.Log(rt.eulerAngles.z);
     }
 
     void OnMouseDrag()
@@ -37,8 +32,8 @@ public class RotableComponent : MonoBehaviour
     void OnMouseUp()
     {
         float _chosenAngle = rt.eulerAngles.z;
-        Debug.Log(rt.eulerAngles.z);
-        string _time = angleToTime(_chosenAngle);
+        //Debug.Log(rt.eulerAngles.z);
+        //string _time = angleToTime(_chosenAngle);
 
 
     }

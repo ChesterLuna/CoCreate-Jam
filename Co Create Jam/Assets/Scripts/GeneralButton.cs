@@ -9,126 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GeneralButton : MonoBehaviour
 {
-    public void ChangeScene(string sceneToLoad)
-    {
-        //string lastScene = "";
 
-        MapHandler handler = FindObjectOfType<MapHandler>();
-
-        if (sceneToLoad[0] == 'P')
-        {
-            int index = handler.PirateEvents.FindIndex(a => a.Contains(sceneToLoad));
-            if (index != 0)
-            {
-                if (GameSession.Instance.Global_Choices.ContainsKey(handler.PirateEvents[index - 1] + "_Positive"))
-                {
-                    sceneToLoad = sceneToLoad + "_Positive";
-                }
-                else if (GameSession.Instance.Global_Choices.ContainsKey(handler.PirateEvents[index - 1] + "_Negative"))
-                {
-                    sceneToLoad = sceneToLoad + "_Negative";
-                }
-            }
-        }
-        else if (sceneToLoad[0] == 'S')
-        {
-            int index = handler.SamuraiEvents.FindIndex(a => a.Contains(sceneToLoad));
-            if (index != 0)
-            {
-                if (GameSession.Instance.Global_Choices.ContainsKey(handler.SamuraiEvents[index - 1] + "_Positive"))
-                {
-                    sceneToLoad = sceneToLoad + "_Positive";
-                }
-                else if (GameSession.Instance.Global_Choices.ContainsKey(handler.SamuraiEvents[index - 1] + "_Negative"))
-                {
-                    sceneToLoad = sceneToLoad + "_Negative";
-                }
-            }
-        }
-        else if (sceneToLoad[0] == 'V')
-        {
-            int index = handler.VictorianEvents.FindIndex(a => a.Contains(sceneToLoad));
-            if (index != 0)
-            {
-                if (GameSession.Instance.Global_Choices.ContainsKey(handler.VictorianEvents[index - 1] + "_Positive"))
-                {
-                    sceneToLoad = sceneToLoad + "_Positive";
-                }
-                else if (GameSession.Instance.Global_Choices.ContainsKey(handler.VictorianEvents[index - 1] + "_Negative"))
-                {
-                    sceneToLoad = sceneToLoad + "_Negative";
-                }
-            }
-        }
-
-        if(SceneManager.GetActiveScene().name == "House Map")
-            GameSession.Instance.NightsLeft--;
-
-
-        SceneManager.LoadScene(sceneToLoad);
-        // else
-        //     Debug.LogErrorFormat(sceneToLoad);
-
-    }
-
-    public void ChangeSceneToEnding()
-    {
-        List<string> possibleEndings = new List<string>();
-        string selectedEnding = "Neutral";
-        int maxAttraction = 0;
-
-
-        // || 
-        
-        if (GameSession.Instance.Global_Choices["P_Pool"] == true && GameSession.Instance.Pirate_Attraction >= 5)
-        {
-            if(GameSession.Instance.Pirate_Attraction > maxAttraction)
-            {
-                maxAttraction = GameSession.Instance.Pirate_Attraction;
-                possibleEndings.Clear();
-                possibleEndings.Add("P");
-            }
-            else if(GameSession.Instance.Pirate_Attraction == maxAttraction)
-            {
-                possibleEndings.Add("P");
-            }
-        }
-        if (GameSession.Instance.Global_Choices["S_Roof"] == true && GameSession.Instance.Samurai_Attraction >= 5)
-        {
-            if (GameSession.Instance.Samurai_Attraction > maxAttraction)
-            {
-                maxAttraction = GameSession.Instance.Samurai_Attraction;
-                possibleEndings.Clear();
-                possibleEndings.Add("S");
-            }
-            else if (GameSession.Instance.Samurai_Attraction == maxAttraction)
-            {
-                possibleEndings.Add("S");
-            }
-        }
-        if (GameSession.Instance.Global_Choices["V_Bathroom"] == true && GameSession.Instance.Victorian_Attraction >= 5)
-        {
-            if (GameSession.Instance.Victorian_Attraction > maxAttraction)
-            {
-                maxAttraction = GameSession.Instance.Victorian_Attraction;
-                possibleEndings.Clear();
-                possibleEndings.Add("V");
-            }
-            else if (GameSession.Instance.Victorian_Attraction == maxAttraction)
-            {
-                possibleEndings.Add("V");
-            }
-        }
-
-        if (possibleEndings.Count != 0)
-        {
-            int randInd = UnityEngine.Random.Range(0, possibleEndings.Count);
-            selectedEnding = possibleEndings[randInd];
-        }
-
-        SceneManager.LoadScene(selectedEnding + "_Ending");
-
-    }
 
 
     public void DisplayMenu(bool display)
@@ -176,6 +57,11 @@ public class GeneralButton : MonoBehaviour
 
     }
 
+    public void AddToTimer(float seconds)
+    {
+        GameObject.FindWithTag("GameController").GetComponent<LevelManager>().AddTimer(seconds);
+
+    }
 
     public void QuitGame()
     {
