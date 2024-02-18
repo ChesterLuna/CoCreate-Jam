@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -7,6 +9,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject _activeCanvas;
     [SerializeField] public List<GameObject> ListCanvases;
     Dictionary<string, GameObject> _canvases = new Dictionary<string, GameObject>();
+    [SerializeField] TextMeshProUGUI _score;
+    [SerializeField] float _maxTimer = 600f;
+    [SerializeField] float _timeLeft = 600f;
     // Get 5 canvases. Dictionary with name of scene "string" and canvases objects. To make dictionary, serialize a tuple and do a for to add [0] as keys and [1] as values, 
 
     // Start is called before the first frame update
@@ -15,11 +20,50 @@ public class LevelManager : MonoBehaviour
         Debug.Assert(ListCanvases != null, "No added Scenes");
         Debug.Assert(_activeCanvas != null, "No serialized active canvas");
 
+        _timeLeft = _maxTimer;
+        _timeLeft = _maxTimer;
+
         foreach (GameObject _canvas in ListCanvases)
         {
             _canvases.Add(_canvas.name, _canvas);
         }
 
+    }
+
+    private void Update()
+    {
+        _timeLeft -= Time.deltaTime;
+        UpdateScore(_timeLeft);
+
+    }
+
+    void UpdateScore(float _timeLeft)
+    {
+        float _minutes = Mathf.Floor(_timeLeft / 60);
+        float _seconds = Mathf.RoundToInt(_timeLeft % 60.1f);
+        // if(_seconds == 60)
+        //     _seconds = 59;
+
+        string _timer;
+        if(_minutes >= 10)
+        {
+            _timer = _minutes.ToString();
+        }
+        else
+        {
+            _timer = "0" + _minutes.ToString();
+        }
+        _timer += ":";
+        if (_seconds >= 10)
+        {
+            _timer += _seconds.ToString();
+        }
+        else
+        {
+            _timer = "0" + _seconds.ToString();
+        }
+
+        _score.text = _timer;
     }
 
     public void ChangeCanvas(string _newCanvas)
