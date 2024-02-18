@@ -38,8 +38,8 @@ public class PopUpOnClick : MonoBehaviour
             Debug.Log("The pop up for this button is already open");
             return;
         }
-        Vector2 mousePos = Input.mousePosition;
-        mousePos = _mainCamera.ScreenToWorldPoint(mousePos);
+        Vector2 mousePos = GetMousePosition();
+
         GameObject _newPopUp = Instantiate(_popUp, mousePos, transform.rotation, _mainCanvas.transform);
 
         RectTransform rt = _newPopUp.GetComponent<RectTransform>();
@@ -47,6 +47,13 @@ public class PopUpOnClick : MonoBehaviour
 
         _openedPopUp = true;
         _newPopUp.GetComponent<DeletePopUpOnClick>().SetParent(gameObject);
+    }
+
+    private Vector2 GetMousePosition()
+    {
+        Vector2 mousePos = Input.mousePosition;
+        mousePos = _mainCamera.ScreenToWorldPoint(mousePos);
+        return mousePos;
     }
 
     private Vector2 FindPositionInsideBounds(RectTransform rt)
