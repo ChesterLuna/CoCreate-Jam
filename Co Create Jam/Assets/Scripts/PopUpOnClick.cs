@@ -49,6 +49,21 @@ public class PopUpOnClick : MonoBehaviour
         _newPopUp.GetComponent<DeletePopUpOnClick>().SetParent(gameObject);
     }
 
+    public void OpenPoPup()
+    {
+        if (_openedPopUp)
+        {
+            Debug.Log("The pop up for this button is already open");
+            return;
+        }
+
+        GameObject _newPopUp = Instantiate(_popUp, transform.position, transform.rotation, _mainCanvas.transform);
+
+        _openedPopUp = true;
+        _newPopUp.GetComponent<DeletePopUpOnClick>().SetParent(gameObject);
+    }
+
+
     private Vector2 GetMousePosition()
     {
         Vector2 mousePos = Input.mousePosition;

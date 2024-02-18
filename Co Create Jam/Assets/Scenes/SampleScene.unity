@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 90660090}
   - component: {fileID: 90660089}
   m_Layer: 5
-  m_Name: Time (5)
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -949,8 +949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: 119}
-  m_SizeDelta: {x: 1037.93, y: 125.74}
+  m_AnchoredPosition: {x: -0.0000076294, y: 121}
+  m_SizeDelta: {x: 1262.86, y: 152.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90660089
 MonoBehaviour:
@@ -988,7 +988,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: you must set the times right
+  m_text: Curious about the time of abduction? Set the times right and you will be
+    rewarded with your answer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -1015,7 +1016,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 58.05
   m_fontSizeBase: 142.56
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1203,8 +1204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 166, y: -457.96338}
-  m_SizeDelta: {x: 223.05, y: 125.74}
+  m_AnchoredPosition: {x: 175, y: -457}
+  m_SizeDelta: {x: 300.37, y: 169.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160131086
 MonoBehaviour:
@@ -1242,7 +1243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUY
+  m_text: 11:30
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -2005,7 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06cc0bfc9997b241bf9aa53d1f84850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctTime: 7:15
+  _correctTime: 03:45
   _foundCorrectTime: 0
   _hours: 00
   _minutes: 00
@@ -2698,8 +2699,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 513, y: -457.96338}
-  m_SizeDelta: {x: 223.05, y: 125.74}
+  m_AnchoredPosition: {x: 519, y: -457.00003}
+  m_SizeDelta: {x: 300.37, y: 169.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406515594
 MonoBehaviour:
@@ -2737,7 +2738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUY
+  m_text: 3:45
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -3548,7 +3549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06cc0bfc9997b241bf9aa53d1f84850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctTime: 7:15
+  _correctTime: 10:00
   _foundCorrectTime: 0
   _hours: 00
   _minutes: 00
@@ -5499,8 +5500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -540, y: -457.96338}
-  m_SizeDelta: {x: 223.05, y: 125.74}
+  m_AnchoredPosition: {x: -544, y: -457}
+  m_SizeDelta: {x: 300.37, y: 169.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694682160
 MonoBehaviour:
@@ -5538,7 +5539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUY
+  m_text: 10:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -7287,8 +7288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: -457.96338}
-  m_SizeDelta: {x: 223.05, y: 125.74}
+  m_AnchoredPosition: {x: -150.18, y: -457.00003}
+  m_SizeDelta: {x: 300.37, y: 169.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971830277
 MonoBehaviour:
@@ -7326,7 +7327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUY
+  m_text: 7:15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -10335,7 +10336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06cc0bfc9997b241bf9aa53d1f84850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctTime: 7:15
+  _correctTime: 11:30
   _foundCorrectTime: 0
   _hours: 00
   _minutes: 00
@@ -12712,6 +12713,8 @@ GameObject:
   - component: {fileID: 1933755266}
   - component: {fileID: 1933755265}
   - component: {fileID: 1933755264}
+  - component: {fileID: 1933755269}
+  - component: {fileID: 1933755268}
   m_Layer: 5
   m_Name: Clocks
   m_TagString: Untagged
@@ -12809,6 +12812,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1933755268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933755263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c63a1a604c3c61488736194526204ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainCamera: {fileID: 0}
+  _mainCanvas: {fileID: 0}
+  _popUp: {fileID: 7550538508761361265, guid: 02a59405864face43acb378de8038ec1, type: 3}
+  _openedPopUp: 0
+--- !u!114 &1933755269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933755263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb28a95e4421504c9c21dc703973820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clocks:
+  - {fileID: 507777509}
+  - {fileID: 79234300}
+  - {fileID: 1490965130}
+  - {fileID: 279838247}
+  puzzleDone: 0
 --- !u!1 &1941559349
 GameObject:
   m_ObjectHideFlags: 0

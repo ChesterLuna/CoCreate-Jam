@@ -5,7 +5,7 @@ using UnityEngine;
 public class clockPuzzle : MonoBehaviour
 {
     [SerializeField] string _correctTime = "";
-    [SerializeField] bool _foundCorrectTime = false;
+    [SerializeField] public bool _foundCorrectTime = false;
     public string _hours = "00";
     public string _minutes = "00";
     string _time;
