@@ -7,7 +7,7 @@ public class DeletePopUpOnClick : MonoBehaviour
 {
     [SerializeField] GameObject _parentButton;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         Debug.Assert(_parentButton != null, "This popup was instantiated without a parent or the parent disappeared.");
     }
@@ -23,7 +23,10 @@ public class DeletePopUpOnClick : MonoBehaviour
     {
         Debug.Log("Deleted one PopUp in location: " + transform.position);
 
-        _parentButton.GetComponent<PopUpOnClick>().SetOpenedPopUp(false);
+        if(_parentButton != null)
+        {
+            _parentButton.GetComponent<PopUpOnClick>().SetOpenedPopUp(false);
+        }
         Destroy(this.gameObject);
 
     }
