@@ -802,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 0}
   _mainCanvas: {fileID: 0}
-  _popUp: {fileID: 0}
+  _popUp: {fileID: 7550538508761361265, guid: d4b312cf6b4e7b84795a4d9776e2b639, type: 3}
   _openedPopUp: 0
 --- !u!114 &66219306
 MonoBehaviour:
@@ -6333,7 +6333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 0}
   _mainCanvas: {fileID: 0}
-  _popUp: {fileID: 0}
+  _popUp: {fileID: 7550538508761361265, guid: 08a5d3f900d520d4098621999f6d2a03, type: 3}
   _openedPopUp: 0
 --- !u!114 &681069829
 MonoBehaviour:
@@ -7353,7 +7353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 0}
   _mainCanvas: {fileID: 0}
-  _popUp: {fileID: 0}
+  _popUp: {fileID: 7550538508761361265, guid: 5c6b4cfdbecbf744e8eadf220ec9103c, type: 3}
   _openedPopUp: 0
 --- !u!114 &780890542
 MonoBehaviour:
