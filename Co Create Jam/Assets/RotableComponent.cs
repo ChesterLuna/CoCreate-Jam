@@ -8,12 +8,19 @@ public class RotableComponent : MonoBehaviour
     [SerializeField] bool _hourHand = false;
     [SerializeField] bool _minuteHand = false;
     string _time;
+    RectTransform rt;
 
     private void Start()
     {
         Debug.Assert(GetComponent<Collider>() != null, "This object must have a collider for dragging");
-        _startAngle = transform.rotation.z;
-        _time = angleToTime(transform.rotation.z);
+        rt = GetComponent<RectTransform>();
+        _startAngle = rt.eulerAngles.z;
+        //_time = angleToTime(transform.rotation.z);
+    }
+
+    private void Update()
+    {
+        Debug.Log(rt.eulerAngles.z);
     }
 
     void OnMouseDrag()
@@ -27,9 +34,10 @@ public class RotableComponent : MonoBehaviour
 
     }
 
-    void OnMouseExit()
+    void OnMouseUp()
     {
-        float _chosenAngle = transform.rotation.z;
+        float _chosenAngle = rt.eulerAngles.z;
+        Debug.Log(rt.eulerAngles.z);
         string _time = angleToTime(_chosenAngle);
 
 
@@ -49,6 +57,9 @@ public class RotableComponent : MonoBehaviour
         {
             float angleF = _angle / (360f / 12f);
             _theTime = Mathf.Floor(angleF).ToString();
+            Debug.Log(_angle);
+            Debug.Log(angleF);
+            Debug.Log(_theTime);
             transform.parent.GetComponent<clockPuzzle>()._hours = _theTime;
         }
         return _theTime;

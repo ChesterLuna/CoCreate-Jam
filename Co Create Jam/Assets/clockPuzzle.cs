@@ -6,8 +6,8 @@ public class clockPuzzle : MonoBehaviour
 {
     [SerializeField] string _correctTime = "";
     [SerializeField] bool _foundCorrectTime = false;
-    public string _hours;
-    public string _minutes;
+    public string _hours = "00";
+    public string _minutes = "00";
     string _time;
 
     // Start is called before the first frame update
