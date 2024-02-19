@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NewGame : MonoBehaviour
 {
-    [SerializeField] string introScene = "Desktop";
+    [SerializeField] string sceneToFade = "Desktop";
     [SerializeField] GameObject _txtCrawlerBox;
+    FaderScript fader;
 
     private void Start()
     {
-        
+        fader = FindObjectOfType<FaderScript>();
     }
 
     private void Update()
@@ -22,7 +24,7 @@ public class NewGame : MonoBehaviour
         if (_txtCrawlerBox.GetComponent<TextMeshProUGUI>().text == _txtCrawlerBox.GetComponent<TextCrawler>()._textToWrite
         || _txtCrawlerBox == null)
         {
-            ChangeScene(introScene);
+            fader.FadeToScene(sceneToFade);
         }
 
     }
@@ -32,13 +34,10 @@ public class NewGame : MonoBehaviour
         Debug.Assert(_txtCrawlerBox != null, "Txt crawler is not activated ebcasue there is no game object");
         if (_txtCrawlerBox == null)
         {
-            ChangeScene(introScene);
+            fader.FadeToScene(sceneToFade);
         }
         _txtCrawlerBox.GetComponent<TextCrawler>().CrawlText();
+        GetComponent<Button>().interactable = false;
     }
 
-    public void ChangeScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
-    }
 }

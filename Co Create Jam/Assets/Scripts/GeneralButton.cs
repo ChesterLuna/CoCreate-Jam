@@ -70,4 +70,10 @@ public class GeneralButton : MonoBehaviour
         
     }
 
+    public void ChangeSceneFading(string sceneToFade)
+    {
+        FindObjectOfType<FaderScript>().FadeToScene(sceneToFade);
+    }
+
+
 }

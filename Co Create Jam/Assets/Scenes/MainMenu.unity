@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9657adced233101478617dd8bc05e6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introScene: Desktop
+  sceneToFade: Desktop
   _txtCrawlerBox: {fileID: 0}
 --- !u!1 &1289333164
 GameObject:
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9657adced233101478617dd8bc05e6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introScene: Desktop
+  sceneToFade: Intro Text
   _txtCrawlerBox: {fileID: 7395933}
 --- !u!224 &1380673436 stripped
 RectTransform:
@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9657adced233101478617dd8bc05e6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introScene: Desktop
+  sceneToFade: Desktop
   _txtCrawlerBox: {fileID: 0}
 --- !u!114 &1587258998
 MonoBehaviour:
@@ -2670,6 +2670,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6895992074031462564}
   m_CullTransparentMesh: 1
+--- !u!1001 &3805397107181521745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3804271962173734038, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1172525343}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1020.48883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 657.9379
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.230732
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739372098798168762, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244121211599192049, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_Name
+      value: Fader
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244121211599192049, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
 --- !u!222 &3829011580206104782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3781,3 +3846,4 @@ SceneRoots:
   - {fileID: 3105147068447837098}
   - {fileID: 399003179}
   - {fileID: 518605796}
+  - {fileID: 3805397107181521745}
