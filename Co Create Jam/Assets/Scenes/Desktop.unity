@@ -586,6 +586,7 @@ MonoBehaviour:
   - {fileID: 744810025}
   - {fileID: 1610908781}
   _score: {fileID: 674144537}
+  _scoreObject: {fileID: 674144535}
   _maxTimer: 600
   _timeLeft: 600
 --- !u!4 &594534295
@@ -702,6 +703,7 @@ GameObject:
   - component: {fileID: 674144536}
   - component: {fileID: 674144538}
   - component: {fileID: 674144537}
+  - component: {fileID: 674144539}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -825,6 +827,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674144535}
   m_CullTransparentMesh: 1
+--- !u!95 &674144539
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674144535}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7eecb6e873c58ce4991652ca539f5e65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &744810025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3689875934164623126, guid: 617f19d23eed99a4bb1ae1d62e65458b, type: 3}
@@ -1168,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1501556818
 MonoBehaviour:
   m_ObjectHideFlags: 0
