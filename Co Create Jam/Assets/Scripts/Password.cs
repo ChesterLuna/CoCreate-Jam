@@ -18,6 +18,10 @@ public class Password : MonoBehaviour
         {
             ChangeScene("Good Ending");
         }
+        else
+        {
+            AddToTimer(-60f);
+        }
     }
 
     public void CheckCost()
@@ -28,11 +32,23 @@ public class Password : MonoBehaviour
         {
             GetComponent<PopUpOnClick>().OpenPoPup();
         }
+        else
+        {
+            AddToTimer(-60f);
+        }
+
     }
 
     public void ChangeScene(string scene)
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void AddToTimer(float seconds)
+    {
+        GameObject.FindWithTag("GameController").GetComponent<LevelManager>().AddTimer(seconds);
+
+    }
+
 
 }
