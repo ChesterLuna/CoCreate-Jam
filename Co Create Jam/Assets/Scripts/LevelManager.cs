@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public List<GameObject> ListCanvases;
     Dictionary<string, GameObject> _canvases = new Dictionary<string, GameObject>();
     [SerializeField] TextMeshProUGUI _score;
-    [SerializeField] GameObject _scoreObject;
+    [SerializeField] GameObject _scoreObjectCanvas;
     [SerializeField] float _maxTimer = 600f;
     [SerializeField] float _timeLeft = 600f;
     // Get 5 canvases. Dictionary with name of scene "string" and canvases objects. To make dictionary, serialize a tuple and do a for to add [0] as keys and [1] as values, 
@@ -93,7 +93,7 @@ public class LevelManager : MonoBehaviour
     public void AddTimer(float seconds)
     {
         _timeLeft += seconds;
-        _scoreObject.GetComponent<Animator>().SetTrigger("Glitching");
+        _scoreObjectCanvas.GetComponent<Animator>().SetTrigger("Glitching");
     }
     public void QuitGame()
     {
