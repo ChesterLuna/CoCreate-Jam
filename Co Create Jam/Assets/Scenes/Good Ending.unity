@@ -225,7 +225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 190, y: -84}
+  m_AnchoredPosition: {x: 2.6535034, y: 0}
   m_SizeDelta: {x: -445.03, y: -391.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &827725459
@@ -248,12 +248,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Your child has gone missing and you decide to conduct your own search
-    for them. You scour the streets and internet until you venture into the dark
-    web, where your search leads you to the site of a trafficking ring. Your gut
-    tells you that this may be the key to reuniting with your child.
-
-'
+  m_text: "Police: Hello, we are just calling to let you know that we\u2019ve found
+    the child. We\u2019ll be launching a full-scale investigation so please come
+    to the police station at your earliest convenience\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -280,7 +277,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.45
+  m_fontSize: 31.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,23 +434,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b74e4ee04648f0940b0afb79069e07cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1261764016 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 398771572398797848, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
-  m_PrefabInstance: {fileID: 2041917607}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1261764021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261764016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657adced233101478617dd8bc05e6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1380673436 stripped
@@ -643,11 +623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272764312896662512, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -332.33344
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5272764312896662512, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -125
+      value: -167
       objectReference: {fileID: 0}
     - target: {fileID: 5698460897050402415, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       propertyPath: m_Name
@@ -668,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 6339534808303446296, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1261764021}
+      objectReference: {fileID: 0}
     - target: {fileID: 6339534808303446296, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -724,14 +704,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3416815435224778215, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
+    - {fileID: 874422275569512006, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
+    - {fileID: 398771572398797848, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3105147069307199624, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
-      insertIndex: 6
+      insertIndex: 4
       addedObject: {fileID: 827725458}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 398771572398797848, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1261764021}
     - targetCorrespondingSourceObject: {fileID: 7699456377386647274, guid: f40a7861efe642e4aa99c4e1bef37d5c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190924036}

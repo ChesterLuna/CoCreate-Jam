@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Password : MonoBehaviour
@@ -15,7 +16,7 @@ public class Password : MonoBehaviour
 
         if(_givenPassword.ToUpper() == correctPassword.ToUpper())
         {
-            Debug.Log("Congrats");
+            ChangeScene("Good Ending");
         }
     }
 
@@ -28,4 +29,10 @@ public class Password : MonoBehaviour
             GetComponent<PopUpOnClick>().OpenPoPup();
         }
     }
+
+    public void ChangeScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
 }

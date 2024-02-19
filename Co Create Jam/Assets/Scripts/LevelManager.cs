@@ -35,6 +35,11 @@ public class LevelManager : MonoBehaviour
         _timeLeft -= Time.deltaTime;
         UpdateScore(_timeLeft);
 
+        if(_timeLeft<=0)
+        {
+            QuitGame();
+        }
+
     }
 
     void UpdateScore(float _timeLeft)
@@ -87,6 +92,12 @@ public class LevelManager : MonoBehaviour
     public void AddTimer(float seconds)
     {
         _timeLeft += seconds;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
+
     }
 
 
