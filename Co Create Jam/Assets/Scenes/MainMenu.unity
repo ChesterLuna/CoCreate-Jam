@@ -371,6 +371,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2267798825861590473, guid: 2af70903c515eb246afd8688339189e2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.6535645
+      objectReference: {fileID: 0}
     - target: {fileID: 4379584457538313102, guid: 2af70903c515eb246afd8688339189e2, type: 3}
       propertyPath: m_Name
       value: Main Menu Canvas Desktop
@@ -439,10 +443,6 @@ PrefabInstance:
     - target: {fileID: 8244121211599192049, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
       propertyPath: m_Name
       value: Fader
-      objectReference: {fileID: 0}
-    - target: {fileID: 8244121211599192049, guid: 871d915b76bb163438c616b69b4699ef, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
