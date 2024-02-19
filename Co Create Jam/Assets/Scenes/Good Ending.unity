@@ -400,11 +400,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startAtPlay: 1
-  _textToWrite: 'Your child has gone missing and you decide to conduct your own search
-    for them. You scour the streets and internet until you venture into the dark
-    web, where your search leads you to the site of a trafficking ring. Your gut
-    tells you that this may be the key to reuniting with your child. '
-  _speedToWrite: 0.03
+  _textToWrite: "Police: Hello, we are just calling to let you know that we\u2019ve
+    found the child. We\u2019ll be launching a full-scale investigation so please
+    come to the police station at your earliest convenience\u2026 "
+  _speedToWrite: 0.05
 --- !u!1 &1172525341
 GameObject:
   m_ObjectHideFlags: 0

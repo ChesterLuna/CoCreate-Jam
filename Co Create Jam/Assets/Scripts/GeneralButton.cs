@@ -16,7 +16,7 @@ public class GeneralButton : MonoBehaviour
     {
         Transform theCanvas = gameObject.transform.root.gameObject.transform;
         theCanvas.Find("Menu HUD").GameObject().SetActive(display);
-        theCanvas.Find("Open Menu").GameObject().SetActive(!display);
+        theCanvas.Find("Credits").GameObject().SetActive(!display);
     }
 
     // public void SaveGame()
