@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.026001, y: -19.542908}
-  m_SizeDelta: {x: -78.4591, y: -126.9092}
+  m_AnchoredPosition: {x: 8.434509, y: -19.542908}
+  m_SizeDelta: {x: -47.538, y: -126.9092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &758408339706013194
 CanvasRenderer:
@@ -65,7 +65,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem Ipsum Lorem Ipsum
+  m_text: 'Take the time you need
+
+    Figure them out line by line
+
+    Remember
+    PEMDAS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -104,7 +109,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 122.86
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -253,7 +258,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 885.8843, y: 367.44}
-  m_SizeDelta: {x: -1527.258, y: -770.2888}
+  m_SizeDelta: {x: -1488.6998, y: -770.2888}
   m_Pivot: {x: -0.000000078669366, y: 0.0000000037252903}
 --- !u!223 &3719949110897177696
 Canvas:
@@ -376,7 +381,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 283.28046, y: 312.40543}
+  m_Offset: {x: 189.7685, y: 278.61148}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -387,7 +392,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 563.15344, y: 65.08209}
+  m_Size: {x: 376.12952, y: 60.45282}
   m_EdgeRadius: 0
 --- !u!1 &7707682199737902111
 GameObject:
@@ -703,11 +708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5558042700742717601, guid: 2a3578a862ed4de4e9752d8a323beb23, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 129.57126
+      value: 141.9
       objectReference: {fileID: 0}
     - target: {fileID: 5558042700742717601, guid: 2a3578a862ed4de4e9752d8a323beb23, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 126.329155
+      value: 126.63
       objectReference: {fileID: 0}
     - target: {fileID: 5558042700742717601, guid: 2a3578a862ed4de4e9752d8a323beb23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

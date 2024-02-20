@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.026001, y: -19.542908}
-  m_SizeDelta: {x: -78.4591, y: -126.9092}
+  m_AnchoredPosition: {x: 6.721924, y: -19.542908}
+  m_SizeDelta: {x: -50.9634, y: -126.9092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &758408339706013194
 CanvasRenderer:
@@ -65,7 +65,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem Ipsum Lorem Ipsum
+  m_text: 'Some are forgeries
+
+    A moth in a flower lies,
+
+    waiting to be whole
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -104,7 +110,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 116.56
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -376,7 +382,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 283.28046, y: 312.40543}
+  m_Offset: {x: 189.7685, y: 278.61148}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -387,7 +393,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 563.15344, y: 65.08209}
+  m_Size: {x: 376.12952, y: 60.45282}
   m_EdgeRadius: 0
 --- !u!1 &7707682199737902111
 GameObject:
