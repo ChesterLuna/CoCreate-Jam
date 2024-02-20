@@ -9,20 +9,23 @@ public class PopUpOnClick : MonoBehaviour
     [SerializeField] GameObject _mainCanvas;
     [SerializeField] GameObject _popUp;
     [SerializeField] public bool _openedPopUp = false;
+    [SerializeField] GameObject _bounds;
+
     // Start is called before the first frame update
 
     void Awake()
     {
         
         _mainCamera = Camera.main;
-        _mainCanvas = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().GetActiveCanvas();
         // if(popUp == null)
         Debug.Assert(_popUp != null, "There is no popup added to this button");
+        _bounds = GameObject.FindWithTag("Bounds");
 
     }
     void Start()
     {
-        
+        _mainCanvas = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().GetActiveCanvas();
+
     }
 
     // Update is called once per frame
@@ -57,8 +60,10 @@ public class PopUpOnClick : MonoBehaviour
             return;
         }
 
+
         GameObject _newPopUp = Instantiate(_popUp, transform.position, transform.rotation, _mainCanvas.transform);
 
+        _newPopUp.GetComponent<RectTransform>().anchoredPosition = new Vector2(Screen.width / 2, Screen.height / 2);
         _openedPopUp = true;
         _newPopUp.GetComponent<DeletePopUpOnClick>().SetParent(gameObject);
     }
@@ -73,10 +78,18 @@ public class PopUpOnClick : MonoBehaviour
 
     private Vector2 FindPositionInsideBounds(RectTransform rt)
     {
-        Vector2 popUpPosition = rt.anchoredPosition;
+        RectTransform bound = _bounds.GetComponent<RectTransform>();
+        Vector2 popUpPosition = rt.anchoredPosition;//transform.TransformPoint(transform.position);
 
-        float _newWidth = Mathf.Clamp(popUpPosition.x, 0, Screen.width - popUpPosition.x / 2);
-        float _newHeight = Mathf.Clamp(popUpPosition.y, 0, Screen.height - popUpPosition.y / 2);
+        float _boundedWidth = bound.rect.width;
+        float _boundedHeight = bound.rect.height;
+        float _boundedLeft = bound.offsetMin.x;//bound.rect.left;
+        float _boundedBottom = bound.offsetMin.y;//bound.rect.bottom;
+
+
+        float _newWidth = Mathf.Clamp(popUpPosition.x, _boundedLeft, _boundedLeft + _boundedWidth - rt.rect.width);
+        float _newHeight = Mathf.Clamp(popUpPosition.y, _boundedBottom, _boundedBottom + _boundedHeight - rt.rect.height);
+
 
         Vector2 _newPopUpPosition = new Vector2(_newWidth, _newHeight);
 

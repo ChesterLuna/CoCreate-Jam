@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fader
+  - Bounds
+  - Piece
   layers:
   - Default
   - TransparentFX

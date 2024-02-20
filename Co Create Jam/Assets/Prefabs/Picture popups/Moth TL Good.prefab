@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 717904089443844103}
   - component: {fileID: 1827756141963189692}
   - component: {fileID: 6544372812076619683}
+  - component: {fileID: 7079223020219357998}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.14892578}
-  m_SizeDelta: {x: 84, y: 94}
+  m_SizeDelta: {x: 88, y: 76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3780831662286578099
 CanvasRenderer:
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa99130142857574d8d42917deecddf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa9d367c3143eab47afd8b945071b0ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93,6 +94,7 @@ MonoBehaviour:
   _mainCanvas: {fileID: 0}
   _popUp: {fileID: 7550538508761361265, guid: abc84db401c08d44bbd74f8b79aeaa94, type: 3}
   _openedPopUp: 0
+  _bounds: {fileID: 0}
 --- !u!114 &6544372812076619683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +139,41 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!58 &7079223020219357998
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228917496543777634}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -34.919914, y: -14.757511}
+  serializedVersion: 2
+  m_Radius: 2.997267
 --- !u!1 &7550538508761361265
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +190,7 @@ GameObject:
   - component: {fileID: 6764394568896514850}
   - component: {fileID: 6690082962568444694}
   m_Layer: 5
-  m_Name: Picture 3
+  m_Name: Moth TL Good
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,8 +213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 804.4624, y: 339.11572}
-  m_SizeDelta: {x: -1526.6763, y: -640.7188}
+  m_AnchoredPosition: {x: 888.3458, y: 367.44}
+  m_SizeDelta: {x: -1529.7197, y: -734.8878}
   m_Pivot: {x: -0.000000078669366, y: 0.0000000037252903}
 --- !u!223 &3719949110897177696
 Canvas:
@@ -267,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df76fff2c283ee42b1b16ae065ba8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bounds: {fileID: 0}
 --- !u!61 &6690082962568444694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,7 +337,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 193.25739, y: 217.9326}
+  m_Offset: {x: 193.25739, y: 170.59917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -310,5 +348,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 392.6671, y: 433.80154}
+  m_Size: {x: 392.6671, y: 339.13467}
   m_EdgeRadius: 0
