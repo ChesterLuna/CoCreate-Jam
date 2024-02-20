@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     // Get 5 canvases. Dictionary with name of scene "string" and canvases objects. To make dictionary, serialize a tuple and do a for to add [0] as keys and [1] as values, 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Debug.Assert(ListCanvases != null, "No added Scenes");
         Debug.Assert(_activeCanvas != null, "No serialized active canvas");

@@ -115,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 149.4
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab (3)
+      value: Cost
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text
@@ -273,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab (1)
+      value: Eslay
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text
@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 383.90002
+      value: 386
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -405,7 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab (4)
+      value: Info
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text
@@ -515,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -88.100006
+      value: -76
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -535,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab (2)
+      value: Maps
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text
@@ -653,11 +653,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -760.3
+      value: -762.65295
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.051
+      value: 439.14783
       objectReference: {fileID: 0}
     - target: {fileID: 4906294151460928881, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab
+      value: Polilla
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text
@@ -811,7 +811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847210979318734304, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_Name
-      value: Change Tab (5)
+      value: Time
       objectReference: {fileID: 0}
     - target: {fileID: 8246659368653514603, guid: f94dd304126968d40997fc0ef900a41b, type: 3}
       propertyPath: m_text

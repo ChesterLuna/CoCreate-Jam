@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class MovablePopUp : MonoBehaviour
 {
+    [SerializeField] GameObject _bounds;
     Vector3 offset;
+    RectTransform rt;
+
     private void Start()
     {
-        Debug.Assert(GetComponent<Collider>() != null, "This pop up must have a collider for dragging");
+        Debug.Assert(GetComponent<BoxCollider2D>() != null, "This pop up must have a collider for dragging");
+        _bounds = GameObject.FindWithTag("Bounds");
+        rt = GetComponent<RectTransform>();
+
     }
 
     private void OnMouseDown()
@@ -19,7 +25,6 @@ public class MovablePopUp : MonoBehaviour
     {
         // Vector2 mousePos = GetMousePosition();
 
-        RectTransform rt = GetComponent<RectTransform>();
 
         // rt.anchoredPosition = mousePos;//FindPositionInsideBounds(mousePos);
 
@@ -27,6 +32,7 @@ public class MovablePopUp : MonoBehaviour
         transform.position = (movementPosition);
         rt.anchoredPosition = FindPositionInsideBounds(rt);
 
+        //transform.position = FindPositionInsideBounds(rt);
 
     }
 
@@ -45,10 +51,18 @@ public class MovablePopUp : MonoBehaviour
 
     private Vector2 FindPositionInsideBounds(RectTransform rt)
     {
-        Vector2 popUpPosition = rt.anchoredPosition;
+        RectTransform bound = _bounds.GetComponent<RectTransform>();
+        Vector2 popUpPosition = rt.anchoredPosition;//transform.TransformPoint(transform.position);
 
-        float _newWidth = Mathf.Clamp(popUpPosition.x, 0, Screen.width - popUpPosition.x / 2);
-        float _newHeight = Mathf.Clamp(popUpPosition.y, 0, Screen.height - popUpPosition.y / 2);
+        float _boundedWidth = bound.rect.width;
+        float _boundedHeight = bound.rect.height;
+        float _boundedLeft = bound.offsetMin.x;//bound.rect.left;
+        float _boundedBottom = bound.offsetMin.y;//bound.rect.bottom;
+
+
+        float _newWidth = Mathf.Clamp(popUpPosition.x, _boundedLeft, _boundedLeft +_boundedWidth - rt.rect.width);
+        float _newHeight = Mathf.Clamp(popUpPosition.y, _boundedBottom, _boundedBottom +_boundedHeight - rt.rect.height);
+
 
         Vector2 _newPopUpPosition = new Vector2(_newWidth, _newHeight);
 

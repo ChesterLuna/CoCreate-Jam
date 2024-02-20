@@ -171,7 +171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 276}
+  m_AnchoredPosition: {x: 0.000015259, y: 249}
   m_SizeDelta: {x: 942.45, y: 136.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3564018696002453220
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to La Polilla. \r\n"
+  m_text: "<size=100>Welcome to</size>\nLa Polilla. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
   m_sharedMaterial: {fileID: -3708092901417263017, guid: 6e59f1631630f2744ace03515da59ec0, type: 2}
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -20.43
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1559,7 +1559,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1601031610923900450, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.0496
+      value: 440.0495
       objectReference: {fileID: 0}
     - target: {fileID: 2483284299086933501, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_Pivot.x
@@ -1643,19 +1643,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3398485318139090790, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.05063
+      value: 440.05054
       objectReference: {fileID: 0}
     - target: {fileID: 4148152556406084104, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.05063
+      value: 440.05054
       objectReference: {fileID: 0}
     - target: {fileID: 4877377134750770232, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.0506
+      value: 440.0505
       objectReference: {fileID: 0}
     - target: {fileID: 5295989539713092221, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.05063
+      value: 440.05054
       objectReference: {fileID: 0}
     - target: {fileID: 6197445731593496504, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_Name
@@ -1663,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9105161264047540596, guid: 8b7b4ef9e974cb54eaa0889fb5b5b448, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.0506
+      value: 440.0505
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
