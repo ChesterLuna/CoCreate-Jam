@@ -791,7 +791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6837979140368002771, guid: 5d583a735234ee6488be9e39cae059a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 194.17
+      value: 194.17001
       objectReference: {fileID: 0}
     - target: {fileID: 6837979140368002771, guid: 5d583a735234ee6488be9e39cae059a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1363,6 +1363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cost
       objectReference: {fileID: 0}
+    - target: {fileID: 3689875934164623126, guid: 617f19d23eed99a4bb1ae1d62e65458b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8013086691445202107, guid: 617f19d23eed99a4bb1ae1d62e65458b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1611,7 +1615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7226320661277915146, guid: 94ca2033bf790b446a924152149bbd63, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7579137513737661589, guid: 94ca2033bf790b446a924152149bbd63, type: 3}
       propertyPath: m_AnchoredPosition.y
