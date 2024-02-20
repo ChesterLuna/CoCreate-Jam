@@ -60,8 +60,10 @@ public class PopUpOnClick : MonoBehaviour
             return;
         }
 
+
         GameObject _newPopUp = Instantiate(_popUp, transform.position, transform.rotation, _mainCanvas.transform);
 
+        _newPopUp.GetComponent<RectTransform>().anchoredPosition = new Vector2(Screen.width / 2, Screen.height / 2);
         _openedPopUp = true;
         _newPopUp.GetComponent<DeletePopUpOnClick>().SetParent(gameObject);
     }
