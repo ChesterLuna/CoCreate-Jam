@@ -22,7 +22,6 @@ public class TimeCollider : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     //void OnTriggerStay2D(Collider other) 
     {
-        Debug.Log("Entered in one");
         if(_hour && other.name == "HourCollider")
         {
             clock.GetComponent<clockPuzzle>()._hours = timeNum;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClocksLetterPuzzle : MonoBehaviour
 {
-    [SerializeField] GameObject[] clocks;
+    [SerializeField] GameObject[] _pieces;
 
     [SerializeField] bool puzzleDone = false;
 
@@ -15,9 +15,9 @@ public class ClocksLetterPuzzle : MonoBehaviour
         //     return;
         puzzleDone = true;
 
-        foreach (GameObject clock in clocks)
+        foreach (GameObject _piece in _pieces)
         {
-            if (clock.GetComponent<clockPuzzle>()._foundCorrectTime == false)
+            if (_piece.GetComponent<clockPuzzle>()._foundCorrectTime == false)
             {
                 puzzleDone =false;
             }
@@ -27,7 +27,7 @@ public class ClocksLetterPuzzle : MonoBehaviour
         {
             GetComponent<PopUpOnClick>().OpenPoPup();
             Debug.Log("OPEN");
-            foreach (GameObject clock in clocks)
+            foreach (GameObject clock in _pieces)
             {
                 //if()
             }
