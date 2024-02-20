@@ -27,6 +27,8 @@ public class LevelManager : MonoBehaviour
         foreach (GameObject _canvas in ListCanvases)
         {
             _canvases.Add(_canvas.name, _canvas);
+            if(_canvas.activeSelf)
+                _activeCanvas = _canvas;
         }
 
     }
@@ -47,8 +49,6 @@ public class LevelManager : MonoBehaviour
     {
         float _minutes = Mathf.Floor(_timeLeft / 60);
         float _seconds = Mathf.RoundToInt(_timeLeft % 60.1f);
-        // if(_seconds == 60)
-        //     _seconds = 59;
 
         string _timer;
         if(_minutes >= 10)
